@@ -5,5 +5,9 @@
   "repository": "https://github.com/theIshantha/Focus.git",
   "author": "Ishantha Udara <ishanthaudara96@gmail.com>",
   "license": "MIT",
-  "description": "Put your life in the arms of a digital world."
+  "description": "Put your life in the arms of a digital world.",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  }
 }
