@@ -1,50 +1,11 @@
-'use strict';
+"use strict";
 
-console.log('App.js is running');
-
-// JSX - JavaScript XML
-
-var app = {
-    title: 'Focus App',
-    subtitle: 'The TODO App',
-    options: ['One', 'Two']
-
+var square = function square(x) {
+    return x * x;
 };
 
-var template = React.createElement(
-    'div',
-    null,
-    React.createElement(
-        'h1',
-        null,
-        app.title
-    ),
-    app.subtitle && React.createElement(
-        'p',
-        null,
-        app.subtitle
-    ),
-    React.createElement(
-        'p',
-        null,
-        app.options.length > 0 ? 'Here are your options' : 'No options'
-    ),
-    React.createElement(
-        'ol',
-        null,
-        React.createElement(
-            'li',
-            null,
-            'Item one'
-        ),
-        React.createElement(
-            'li',
-            null,
-            'Item two'
-        )
-    )
-);
+var squareArrow = function squareArrow(x) {
+    return x * x;
+};
 
-var appRoot = document.getElementById('app');
-
-ReactDOM.render(template, appRoot);
+console.log(squareArrow(10));
