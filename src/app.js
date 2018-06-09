@@ -16,7 +16,7 @@ var template = (
 );
 
 var user = {
-    name: 'Andrew',
+    // name: 'Andrew',
     age : '26',
     location : 'Philadelphia'
 };
@@ -31,7 +31,7 @@ function getLocation(location) {
 
 var template1 = (
     <div>
-    <h1> Ishantha Udara </h1>
+    <h1> { user.name ? user.name : 'Anonymous' } </h1>
     <p> About Me :- Recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <p> Age :- 22 </p>
     <p> Location :- {getLocation(user.location)} </p>
