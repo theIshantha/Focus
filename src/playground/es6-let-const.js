@@ -10,12 +10,13 @@ console.log('nameLet', nameLet);
 const nameConst = 'alpha';
 console.log('nameConst', nameConst);
 
-
-var fullName = 'Andrew Mead';
+const fullName = 'Andrew Mead';
+let firstName;
 
 if(fullname){
-    var firstName = fullName.split(' ')[0];
+    const firstName = fullName.split(' ')[0];
     console.log(firstName);
 }
+
 console.log(firstName);
 

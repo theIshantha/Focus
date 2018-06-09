@@ -1,21 +1,50 @@
 'use strict';
 
-var nameVar = 'Andrew';
-nameVar = 'Mike';
+console.log('App.js is running');
 
-console.log('nameVar', nameVar);
+// JSX - JavaScript XML
 
-var naemLet = 'Jen';
-nameLet = 'Julie';
-console.log('nameLet', nameLet);
+var app = {
+    title: 'Focus App',
+    subtitle: 'The TODO App',
+    options: ['One', 'Two']
 
-var nameConst = 'alpha';
-console.log('nameConst', nameConst);
+};
 
-var fullName = 'Andrew Mead';
+var template = React.createElement(
+    'div',
+    null,
+    React.createElement(
+        'h1',
+        null,
+        app.title
+    ),
+    app.subtitle && React.createElement(
+        'p',
+        null,
+        app.subtitle
+    ),
+    React.createElement(
+        'p',
+        null,
+        app.options.length > 0 ? 'Here are your options' : 'No options'
+    ),
+    React.createElement(
+        'ol',
+        null,
+        React.createElement(
+            'li',
+            null,
+            'Item one'
+        ),
+        React.createElement(
+            'li',
+            null,
+            'Item two'
+        )
+    )
+);
 
-if (fullname) {
-    var firstName = fullName.split(' ')[0];
-    console.log(firstName);
-}
-console.log(firstName);
+var appRoot = document.getElementById('app');
+
+ReactDOM.render(template, appRoot);
