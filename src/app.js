@@ -1,9 +1,5 @@
 console.log('App.js is running');
 
-// var template = {
-//     title: 'React test app',
-//     subtitle: 'focus app',
-// }
 
 
 // JSX - JavaScript XML
@@ -11,21 +7,21 @@ console.log('App.js is running');
 var app ={
     title: 'Focus App',
     subtitle: 'The TODO App',
-    option: ['One', 'Two'] 
+    options: ['One', 'Two'] 
 
 }
 
 var template = (
     <div>
         <h1>{app.title}</h1>
-        app.subtitle && <p1>{app.subtitle}</p1>
-
+        {app.subtitle && <p>{app.subtitle}</p>}
+        <p>{app.options.length > 0 ? 'Here are your options' : 'No options' }</p>
         <ol> 
-            <li></li>
-            <li></li>
+            <li>Item one</li>
+            <li>Item two</li>
         </ol>
 
-    <div>
+    </div>
 );
 
 
