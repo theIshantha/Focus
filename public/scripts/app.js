@@ -2,20 +2,24 @@
 
 console.log('App.js is running');
 
-// JSX - JavaScript XML
+var template = {
+    title: 'React test app',
+    subtitle: 'focus'
 
-var template = React.createElement(
+    // JSX - JavaScript XML
+
+};var template = React.createElement(
     'div',
     null,
     React.createElement(
         'h1',
         null,
-        'Focus App'
+        template.title
     ),
     React.createElement(
         'p',
         null,
-        'shit always happens'
+        template.subtitle
     )
 );
 

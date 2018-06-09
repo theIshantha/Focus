@@ -1,11 +1,17 @@
 console.log('App.js is running');
 
+var template = {
+    title: 'React test app',
+    subtitle: 'focus',
+}
+
+
 // JSX - JavaScript XML
 
 var template = ( 
     <div>
-        <h1>Focus App</h1>
-        <p>shit always happens</p>
+        <h1>{template.title}</h1>
+        <p>{template.subtitle}</p>
     </div>
 );
 
