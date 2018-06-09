@@ -4,7 +4,7 @@ console.log('App.js is running');
 
 var template = {
     title: 'React test app',
-    subtitle: 'focus'
+    subtitle: 'focus app'
 
     // JSX - JavaScript XML
 
