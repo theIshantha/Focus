@@ -15,6 +15,10 @@ var template = (
     </div>
 );
 
+function getLocation() {
+    return 'Unkonown'
+}
+
 var template1 = (
     <div>
     <h1> Ishantha Udara </h1>
@@ -26,8 +30,12 @@ var template1 = (
 );
 
 
+
 var appRoot  = document.getElementById('app');
 var appRoot1 = document.getElementById('app1');
 
 ReactDOM.render(template, appRoot);
 ReactDOM.render(template1, appRoot1);
+
+
+

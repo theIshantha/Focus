@@ -23,6 +23,10 @@ var template = {
     )
 );
 
+function getLocation() {
+    return 'Unkonown';
+}
+
 var template1 = React.createElement(
     'div',
     null,
