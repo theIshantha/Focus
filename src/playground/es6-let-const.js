@@ -18,3 +18,4 @@ if(fullname){
     console.log(firstName);
 }
 console.log(firstName);
+
