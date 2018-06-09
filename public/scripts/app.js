@@ -24,7 +24,7 @@ var template = {
 );
 
 function getLocation() {
-    return 'Unkonown';
+    return 'Unknown';
 }
 
 var template1 = React.createElement(
@@ -48,7 +48,9 @@ var template1 = React.createElement(
     React.createElement(
         'p',
         null,
-        ' Location :- Colombo '
+        ' Location :- ',
+        getLocation(),
+        ' '
     )
 );
 
