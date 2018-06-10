@@ -1,18 +1,23 @@
-"use strict";
+'use strict';
 
-var square = function square(x) {
-    return x * x;
-};
+var nameVar = 'Andrew';
+nameVar = 'Mike';
 
-console.log(square(3));
+console.log('nameVar', nameVar);
 
-// const squareArrow = (x) => {
-//     return x * x; 
-// };
+var naemLet = 'Jen';
+nameLet = 'Julie';
+console.log('nameLet', nameLet);
 
+var nameConst = 'alpha';
+console.log('nameConst', nameConst);
 
-var squareArrow = function squareArrow(x) {
-    return x * x;
-};
+var fullName = 'Andrew Mead';
+var firstName = void 0;
 
-console.log(squareArrow(10));
+if (fullname) {
+    var _firstName = fullName.split(' ')[0];
+    console.log(_firstName);
+}
+
+console.log(firstName);
