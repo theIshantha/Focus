@@ -18,12 +18,11 @@ var user = {
     printPlacesLived: function printPlacesLived() {
         var _this = this;
 
-        console.log(this.name);
-        console.log(this.cities);
-
-        this.cities.forEach(function (city) {
-            console.log(_this.name + ' has lived in ' + city);
+        return this.cities.map(function (city) {
+            return _this.name + ' has lived in ' + city;
         });
     }
 };
-user.printPlacesLived();
+console.log(user.printPlacesLived());
+
+var multiplier = {};

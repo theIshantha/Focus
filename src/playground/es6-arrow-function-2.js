@@ -13,14 +13,15 @@ console.log(add(55, 1));
 
 const user = {
     name: 'Andrew',
-    cities: ['Philadelphia','New York','Dublin'],
-    printPlacesLived: function () {
-        console.log(this.name);
-        console.log(this.cities);
-
-        this.cities.forEach((city) => {
-            console.log(this.name + ' has lived in ' + city );
-        });
-    }
+    cities: ['Philadelphia', 'New York', 'Dublin'],
+    printPlacesLived() {
+        
+            return this.cities.map((city) => this.name + ' has lived in ' + city); 
+        }
 };
-user.printPlacesLived();
+console.log(user.printPlacesLived());
+
+
+const multiplier = {
+
+};
