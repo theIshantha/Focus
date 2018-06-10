@@ -33,9 +33,8 @@ var multiplier = {
         var _this2 = this;
 
         return this.number.map(function (num) {
-            return num + ' multiply by ' + _this2.multiplyby + ' = ' + _this2.number * num;
+            return num * _this2.number;
         });
     }
 };
-
 console.log(multiplier.multiply());

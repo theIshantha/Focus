@@ -28,9 +28,8 @@ const multiplier = {
 
     multiply() {
 
-        return this.number.map((num) => num + ' multiply by ' + this.multiplyby + ' = ' +  (this.number * num)  );
+return this.number.map((num) => num * this.number );
     }
 
 };
-
 console.log(multiplier.multiply());
