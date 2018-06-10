@@ -23,5 +23,14 @@ console.log(user.printPlacesLived());
 
 
 const multiplier = {
+    number: [1, 2, 3],
+    multiplyby: 2,
+
+    multiply() {
+
+        return this.number.map((num) => num + ' multiply by ' + this.multiplyby + ' = ' +  (this.number * num)  );
+    }
 
 };
+
+console.log(multiplier.multiply());

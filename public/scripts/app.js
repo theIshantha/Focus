@@ -25,4 +25,17 @@ var user = {
 };
 console.log(user.printPlacesLived());
 
-var multiplier = {};
+var multiplier = {
+    number: [1, 2, 3],
+    multiplyby: 2,
+
+    multiply: function multiply() {
+        var _this2 = this;
+
+        return this.number.map(function (num) {
+            return num + ' multiply by ' + _this2.multiplyby + ' = ' + _this2.number * num;
+        });
+    }
+};
+
+console.log(multiplier.multiply());
