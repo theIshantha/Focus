@@ -45,6 +45,28 @@ var template = React.createElement(
     )
 );
 
+var count = 0;
+
+var templateTwo = React.createElement(
+    'div',
+    { 'class': 'container' },
+    React.createElement('br', null),
+    React.createElement('br', null),
+    React.createElement('br', null),
+    React.createElement('br', null),
+    React.createElement(
+        'h1',
+        null,
+        'Count : ',
+        count
+    ),
+    React.createElement(
+        'button',
+        { type: 'button', 'class': 'btn btn-primary' },
+        ' +1 '
+    )
+);
+
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(templateTwo, appRoot);
