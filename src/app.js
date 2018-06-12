@@ -42,7 +42,6 @@ const templateTwo =  (
 
 
 
-
 var appRoot  = document.getElementById('app');
 
 ReactDOM.render(templateTwo, appRoot);
