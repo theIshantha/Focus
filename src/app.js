@@ -19,7 +19,7 @@ var template = (
         
         <ol> 
             <li>Item one
-            abcdef
+            abcdefg
             </li>
             <li>Item two</li>
         </ol>
