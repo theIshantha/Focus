@@ -1,7 +1,5 @@
 'use strict';
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 console.log('App.js is running');
 
 // JSX - JavaScript XML
@@ -64,10 +62,12 @@ var templateTwo = React.createElement(
     ),
     React.createElement(
         'button',
-        _defineProperty({ id: 'my-id', 'class': 'button' }, 'class', 'btn btn-outline-danger btn-sm'),
+        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
         '\xA0\xA0\xA0\xA0 +1 \xA0\xA0\xA0\xA0'
     )
 );
+
+console.log(templateTwo);
 
 var appRoot = document.getElementById('app');
 

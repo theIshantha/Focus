@@ -35,11 +35,11 @@ const templateTwo =  (
     <br></br>
     <br></br>
         <h1>Count : {count}</h1>
-        <button id="my-id" class="button" class="btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; +1 &nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <button id="my-id" className="button btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; +1 &nbsp;&nbsp;&nbsp;&nbsp;</button>
     </div>
 );
 
-
+console.log(templateTwo);
 
 
 
