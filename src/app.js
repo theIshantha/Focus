@@ -18,7 +18,9 @@ var template = (
         <p>{app.options.length > 0 ? 'Here are your options' : 'No options' }</p>
         
         <ol> 
-            <li>Item one</li>
+            <li>Item one
+            a
+            </li>
             <li>Item two</li>
         </ol>
 
