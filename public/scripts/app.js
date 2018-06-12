@@ -35,7 +35,7 @@ var template = React.createElement(
         React.createElement(
             'li',
             null,
-            'Item one loerem afnnfrnainraadasfaefaf'
+            'Item one loerem afnnfrnainraadasfaefaffefs'
         ),
         React.createElement(
             'li',
