@@ -25,6 +25,7 @@ var template = (
     </div>
 );
 
+
 let count = 0;
 
 const templateTwo =  (
@@ -34,7 +35,7 @@ const templateTwo =  (
     <br></br>
     <br></br>
         <h1>Count : {count}</h1>
-        <button type= "button" class="btn btn-primary"> +1 </button>
+        <button id="my-id" class="button" class="btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; +1 &nbsp;&nbsp;&nbsp;&nbsp;</button>
     </div>
 );
 
