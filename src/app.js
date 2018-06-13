@@ -16,7 +16,12 @@ var template = (
         <h1>{app.title}</h1>
         {app.subtitle && <p>{app.subtitle}</p>}
         <p>{app.options.length > 0 ? 'Here are your options' : 'No options' }</p>
-        <p></p>
+< p > Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galle' +
+    'y of type and scrambled it to make a type specimen book. It has survived not onl' +
+        'y five centuries, but also the leap into electronic typesetting, remaining essen' +
+        'tially unchanged. It was popularised in the 1960s with the release of Letraset s' +
+        'heets containing Lorem Ipsum passages, and more recently with desktop publishing' +
+        ' software like Aldus PageMaker including versions of Lorem Ipsum.</p>'
         <ol> 
             <li>Item one</li>
             <li>Item two</li>
