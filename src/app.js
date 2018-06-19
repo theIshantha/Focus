@@ -31,11 +31,13 @@ const addOne = () => {
 };
 const minusOne = () => {
     console.log('minusOne');
-} ;
+};
+const reset = () => {
+    console.log('reset')
+};
 
 const templateTwo =  (
     <div class="container">
-    <br></br>
     <br></br>
     <br></br>
     <br></br>
