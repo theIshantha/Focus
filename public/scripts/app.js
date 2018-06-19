@@ -71,13 +71,13 @@ var templateTwo = React.createElement(
     ),
     React.createElement(
         'button',
-        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
+        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: addOne },
         '\xA0\xA0\xA0\xA0 +1 \xA0\xA0\xA0\xA0'
     ),
     ' \xA0\xA0',
     React.createElement(
         'button',
-        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
+        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: minusOne },
         '\xA0\xA0\xA0\xA0 -1 \xA0\xA0\xA0\xA0'
     ),
     '  ',
@@ -85,7 +85,7 @@ var templateTwo = React.createElement(
     React.createElement('br', null),
     React.createElement(
         'button',
-        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
+        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: reset },
         '\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0\xA0\xA0\xA0 Reset \xA0\xA0\xA0\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0'
     )
 );
