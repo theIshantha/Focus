@@ -26,9 +26,13 @@ var template = (
 );
 
 let count = 0;
+
 const addOne = () => {
     console.log('addOne');
-}
+};
+const minusOne = () => {
+    console.log('minusOne');
+} ;
 
 const templateTwo =  (
     <div class="container">
