@@ -8,7 +8,6 @@ var app ={
     title: 'Focus App',
     subtitle: 'The TODO App',
     options: ['One', 'Two'] 
-
 }
 
 var template = (
