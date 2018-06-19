@@ -73,6 +73,20 @@ var templateTwo = React.createElement(
         'button',
         { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
         '\xA0\xA0\xA0\xA0 +1 \xA0\xA0\xA0\xA0'
+    ),
+    ' \xA0\xA0',
+    React.createElement(
+        'button',
+        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
+        '\xA0\xA0\xA0\xA0 -1 \xA0\xA0\xA0\xA0'
+    ),
+    '  ',
+    React.createElement('br', null),
+    React.createElement('br', null),
+    React.createElement(
+        'button',
+        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm' },
+        '\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0\xA0\xA0\xA0 Reset \xA0\xA0\xA0\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0'
     )
 );
 

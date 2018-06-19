@@ -33,7 +33,7 @@ const minusOne = () => {
     console.log('minusOne');
 };
 const reset = () => {
-    console.log('reset')
+    console.log('reset');
 };
 
 const templateTwo =  (
@@ -42,7 +42,9 @@ const templateTwo =  (
     <br></br>
     <br></br>
         <h1>Count : {count}</h1>
-        <button id="my-id" className="button btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; +1 &nbsp;&nbsp;&nbsp;&nbsp;</button>
+        <button id="my-id" className="button btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; +1 &nbsp;&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp; 
+        <button id="my-id" className="button btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; -1 &nbsp;&nbsp;&nbsp;&nbsp;</button>  <br></br><br></br>
+        <button id="my-id" className="button btn btn-outline-danger btn-sm">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reset &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</button>
     </div>
 );
 
