@@ -1,99 +1,58 @@
-'use strict';
-
 // JSX - JavaScript XML
 
-var app = {
-    title: 'Focus App',
-    subtitle: 'The TODO App',
-    options: ['One', 'Two']
-};
+// var app ={
+//     title: 'Focus App',
+//     subtitle: 'The TODO App',
+//     options: ['One', 'Two'] 
+// }
 
-var template = React.createElement(
-    'div',
-    null,
-    React.createElement(
-        'h1',
-        null,
-        app.title
-    ),
-    app.subtitle && React.createElement(
-        'p',
-        null,
-        app.subtitle
-    ),
-    React.createElement(
-        'p',
-        null,
-        app.options.length > 0 ? 'Here are your options' : 'No options'
-    ),
-    React.createElement('p', null),
-    React.createElement(
-        'ol',
-        null,
-        React.createElement(
-            'li',
-            null,
-            'Item one'
-        ),
-        React.createElement(
-            'li',
-            null,
-            'Item two'
-        )
-    )
-);
+// var template = (
+//     <div>
+//         <h1>{app.title}</h1>
+//         {app.subtitle && <p>{app.subtitle}</p>}
+//         <p>{app.options.length > 0 ? 'Here are your options' : 'No options' }</p>
+//         <p></p>
+//         <ol> 
+//             <li>Item one</li>
+//             <li>Item two</li>
+//         </ol>
 
-var count = 0;
+//     </div>
+// );
 
-var addOne = function addOne() {
-    count++;
-    renderCounterApp();
-};
-var minusOne = function minusOne() {
-    count--;
-    renderCounterApp();
-};
-var reset = function reset() {
-    count = 0;
-    renderCounterApp();
-};
+// let count = 0;
 
-var appRoot = document.getElementById('app');
+// const addOne = () => {
+//     count++;
+//     renderCounterApp();
+// };
+// const minusOne = () => {
+//     count--;
+//     renderCounterApp();
+// };
+// const reset = () => {
+//     count = 0;
+//     renderCounterApp();
+// };
 
-var renderCounterApp = function renderCounterApp() {
-    var templateTwo = React.createElement(
-        'div',
-        { className: 'container' },
-        React.createElement('br', null),
-        React.createElement('br', null),
-        React.createElement('br', null),
-        React.createElement(
-            'h1',
-            null,
-            'Count : ',
-            count
-        ),
-        React.createElement(
-            'button',
-            { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: addOne },
-            '\xA0\xA0\xA0\xA0 +1 \xA0\xA0\xA0\xA0'
-        ),
-        ' \xA0\xA0',
-        React.createElement(
-            'button',
-            { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: minusOne },
-            '\xA0\xA0\xA0\xA0 -1 \xA0\xA0\xA0\xA0'
-        ),
-        '  ',
-        React.createElement('br', null),
-        React.createElement('br', null),
-        React.createElement(
-            'button',
-            { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: reset },
-            '\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0\xA0\xA0\xA0 Reset \xA0\xA0\xA0\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0'
-        )
-    );
+// var appRoot  = document.getElementById('app');
 
-    ReactDOM.render(templateTwo, appRoot);
-};
-renderCounterApp();
+// const renderCounterApp = () => {
+//     const templateTwo = (
+//         <div className="container">
+//             <br></br>
+//             <br></br>
+//             <br></br>
+//                 <h1>Count : {count}</h1>
+//                 <button id="my-id" className="button btn btn-outline-danger btn-sm" onClick={addOne} >&nbsp;&nbsp;&nbsp;&nbsp; +1 &nbsp;&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;
+//                 <button id="my-id" className="button btn btn-outline-danger btn-sm" onClick={minusOne} >&nbsp;&nbsp;&nbsp;&nbsp; -1 &nbsp;&nbsp;&nbsp;&nbsp;</button>  <br></br><br></br>
+//                 <button id="my-id" className="button btn btn-outline-danger btn-sm" onClick={reset} >&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reset
+//                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</button>
+//         </div>
+//     );
+
+//     ReactDOM.render(templateTwo, appRoot);
+
+// };
+//   renderCounterApp();
+"use strict";
