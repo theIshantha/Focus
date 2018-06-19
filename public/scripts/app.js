@@ -48,50 +48,53 @@ var template = React.createElement(
 var count = 0;
 
 var addOne = function addOne() {
+    count++;
     console.log('addOne');
 };
 var minusOne = function minusOne() {
+    count--;
     console.log('minusOne');
 };
 var reset = function reset() {
     console.log('reset');
 };
 
-var templateTwo = React.createElement(
-    'div',
-    { 'class': 'container' },
-    React.createElement('br', null),
-    React.createElement('br', null),
-    React.createElement('br', null),
-    React.createElement(
-        'h1',
-        null,
-        'Count : ',
-        count
-    ),
-    React.createElement(
-        'button',
-        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: addOne },
-        '\xA0\xA0\xA0\xA0 +1 \xA0\xA0\xA0\xA0'
-    ),
-    ' \xA0\xA0',
-    React.createElement(
-        'button',
-        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: minusOne },
-        '\xA0\xA0\xA0\xA0 -1 \xA0\xA0\xA0\xA0'
-    ),
-    '  ',
-    React.createElement('br', null),
-    React.createElement('br', null),
-    React.createElement(
-        'button',
-        { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: reset },
-        '\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0\xA0\xA0\xA0 Reset \xA0\xA0\xA0\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0'
-    )
-);
-
-console.log(templateTwo);
-
 var appRoot = document.getElementById('app');
 
-ReactDOM.render(templateTwo, appRoot);
+var renderCounterApp = function renderCounterApp() {
+    var templateTwo = React.createElement(
+        'div',
+        { 'class': 'container' },
+        React.createElement('br', null),
+        React.createElement('br', null),
+        React.createElement('br', null),
+        React.createElement(
+            'h1',
+            null,
+            'Count : ',
+            count
+        ),
+        React.createElement(
+            'button',
+            { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: addOne },
+            '\xA0\xA0\xA0\xA0 +1 \xA0\xA0\xA0\xA0'
+        ),
+        ' \xA0\xA0',
+        React.createElement(
+            'button',
+            { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: minusOne },
+            '\xA0\xA0\xA0\xA0 -1 \xA0\xA0\xA0\xA0'
+        ),
+        '  ',
+        React.createElement('br', null),
+        React.createElement('br', null),
+        React.createElement(
+            'button',
+            { id: 'my-id', className: 'button btn btn-outline-danger btn-sm', onClick: reset },
+            '\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0\xA0\xA0\xA0 Reset \xA0\xA0\xA0\xA0\xA0\xA0\xA0 \xA0\xA0\xA0\xA0'
+        )
+    );
+
+    ReactDOM.render(templateTwo, appRoot);
+};
+renderCount;
