@@ -26,6 +26,9 @@ var template = (
 );
 
 let count = 0;
+const addOne = () => {
+    console.log('addOne');
+}
 
 const templateTwo =  (
     <div class="container">

@@ -47,6 +47,9 @@ var template = React.createElement(
 );
 
 var count = 0;
+var addOne = function addOne() {
+    console.log('addOne');
+};
 
 var templateTwo = React.createElement(
     'div',
