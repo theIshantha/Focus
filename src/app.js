@@ -25,7 +25,6 @@ var template = (
     </div>
 );
 
-
 let count = 0;
 
 const templateTwo =  (
@@ -40,8 +39,6 @@ const templateTwo =  (
 );
 
 console.log(templateTwo);
-
-
 
 var appRoot  = document.getElementById('app');
 
