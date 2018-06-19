@@ -49,7 +49,7 @@ var count = 0;
 
 var addOne = function addOne() {
     count++;
-    console.log('addOne');
+    renderCounterApp();
 };
 var minusOne = function minusOne() {
     count--;
@@ -97,4 +97,4 @@ var renderCounterApp = function renderCounterApp() {
 
     ReactDOM.render(templateTwo, appRoot);
 };
-renderCount;
+renderCounterApp();

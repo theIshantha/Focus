@@ -28,7 +28,7 @@ let count = 0;
 
 const addOne = () => {
     count++;
-    console.log('addOne');
+    renderCounterApp();
 };
 const minusOne = () => {
     count--;
@@ -57,5 +57,5 @@ const renderCounterApp = () => {
     ReactDOM.render(templateTwo, appRoot);
 
 };
-  renderCount
+  renderCounterApp();
 
