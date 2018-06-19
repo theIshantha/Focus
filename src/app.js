@@ -1,7 +1,3 @@
-console.log('App.js is running');
-
-
-
 // JSX - JavaScript XML
 
 var app ={
@@ -32,17 +28,18 @@ const addOne = () => {
 };
 const minusOne = () => {
     count--;
-    console.log('minusOne');
+    renderCounterApp();
 };
 const reset = () => {
-    console.log('reset');
+    count = 0;
+    renderCounterApp();
 };
 
 var appRoot  = document.getElementById('app');
 
 const renderCounterApp = () => {
     const templateTwo = (
-        <div class="container">
+        <div className="container">
             <br></br>
             <br></br>
             <br></br>

@@ -1,7 +1,5 @@
 'use strict';
 
-console.log('App.js is running');
-
 // JSX - JavaScript XML
 
 var app = {
@@ -53,10 +51,11 @@ var addOne = function addOne() {
 };
 var minusOne = function minusOne() {
     count--;
-    console.log('minusOne');
+    renderCounterApp();
 };
 var reset = function reset() {
-    console.log('reset');
+    count = 0;
+    renderCounterApp();
 };
 
 var appRoot = document.getElementById('app');
@@ -64,7 +63,7 @@ var appRoot = document.getElementById('app');
 var renderCounterApp = function renderCounterApp() {
     var templateTwo = React.createElement(
         'div',
-        { 'class': 'container' },
+        { className: 'container' },
         React.createElement('br', null),
         React.createElement('br', null),
         React.createElement('br', null),
